@@ -1,4 +1,7 @@
 ### GET request
-GET http://localhost:8080/
+GET http://localhost:8080/api/recipes
+
+### GET request to a recipe by id
+GET http://localhost:8080/api/recipes/1
 
 ###
