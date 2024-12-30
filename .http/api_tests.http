@@ -4,4 +4,39 @@ GET http://localhost:8080/api/recipes
 ### GET request to a recipe by id
 GET http://localhost:8080/api/recipes/1
 
+### POST request
+POST http://localhost:8080/api/recipes/
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "cool",
+    "ingredients": "apple, orange, potato, tomato",
+    "description": "mix apple with orrange to make juice and cook potato with tomato souse",
+    "rating": 5
+}
+
+### DELETE request
+DELETE http://localhost:8080/api/recipes/3
+
+### PUT request
+PUT http://localhost:8080/api/recipes/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "not bad",
+  "ingredients": "egg, water, flour",
+  "description": "mix egg with water and then add flour a little",
+  "rating": 14
+}
+
+### PATCH request
+PATCH http://localhost:8080/api/recipes/3
+Content-Type: application/json
+
+{
+  "name": "good enough"
+}
+
 ###
