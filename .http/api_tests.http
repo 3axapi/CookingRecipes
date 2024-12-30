@@ -1,38 +1,38 @@
-### GET request
+### GET request of every recipe
 GET http://localhost:8080/api/recipes
 
-### GET request to a recipe by id
+### GET request of certain recipe
 GET http://localhost:8080/api/recipes/1
 
-### POST request
+### POST request of creating new recipe
 POST http://localhost:8080/api/recipes/
 Content-Type: application/json
 
 {
-    "id": 3,
+    "id": 6,
     "name": "cool",
     "ingredients": "apple, orange, potato, tomato",
-    "description": "mix apple with orrange to make juice and cook potato with tomato souse",
-    "rating": 5
+    "description": "mix apple with orange to make juice and cook potato with tomato souse",
+    "rating": 9
 }
 
-### DELETE request
-DELETE http://localhost:8080/api/recipes/3
+### DELETE request of certain recipe
+DELETE http://localhost:8080/api/recipes/6
 
-### PUT request
-PUT http://localhost:8080/api/recipes/2
+### PUT request of certain recipe
+PUT http://localhost:8080/api/recipes/6
 Content-Type: application/json
 
 {
-  "id": 2,
+  "id": 6,
   "name": "not bad",
   "ingredients": "egg, water, flour",
   "description": "mix egg with water and then add flour a little",
-  "rating": 14
+  "rating": 9
 }
 
-### PATCH request
-PATCH http://localhost:8080/api/recipes/3
+### PATCH request of certain recipe
+PATCH http://localhost:8080/api/recipes/7
 Content-Type: application/json
 
 {
